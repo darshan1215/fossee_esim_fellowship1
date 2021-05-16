@@ -1,0 +1,97 @@
+.HEA
+.TIM Sun May 16 00:07:07 2021
+.APP "Eeschema 4.0.7-e2-6376~61~ubuntu18.04.1"
+
+.ADD_COM     U4     "adc_bridge_2"
+.ADD_COM     v1     "pulse"
+.ADD_COM     v2     "pulse"
+.ADD_COM     U1     "plot_v1"
+.ADD_COM     U3     "plot_v1"
+.ADD_COM     U2     "ring1"
+.ADD_COM     U5     "dac_bridge_8"
+.ADD_COM     R1     "resistor"
+.ADD_COM     R2     "resistor"
+.ADD_COM     R3     "resistor"
+.ADD_COM     R4     "resistor"
+.ADD_COM     R5     "resistor"
+.ADD_COM     R6     "resistor"
+.ADD_COM     R7     "resistor"
+.ADD_COM     R8     "resistor"
+.ADD_COM     U6     "plot_v1"
+
+
+.ADD_TER   U2   9     "Net-(U2-Pad9)"
+.TER       U5   7
+
+.ADD_TER   U5   15     "Net-(R7-Pad1)"
+.TER       R7   1
+
+.ADD_TER   R8   1     "Net-(R8-Pad1)"
+.TER       U5   16
+
+.ADD_TER   U5   1     "Net-(U2-Pad3)"
+.TER       U2   3
+
+.ADD_TER   U5   2     "Net-(U2-Pad4)"
+.TER       U2   4
+
+.ADD_TER   U2   5     "Net-(U2-Pad5)"
+.TER       U5   3
+
+.ADD_TER   U2   6     "Net-(U2-Pad6)"
+.TER       U5   4
+
+.ADD_TER   U2   7     "Net-(U2-Pad7)"
+.TER       U5   5
+
+.ADD_TER   U5   8     "Net-(U2-Pad10)"
+.TER       U2   10
+
+.ADD_TER   U5   6     "Net-(U2-Pad8)"
+.TER       U2   8
+
+.ADD_TER   R2   1     "Net-(R2-Pad1)"
+.TER       U5   10
+
+.ADD_TER   R5   1     "Net-(R5-Pad1)"
+.TER       U5   13
+
+.ADD_TER   U5   14     "Net-(R6-Pad1)"
+.TER       R6   1
+
+.ADD_TER   R1   1     "out1"
+.TER       U6   ~
+            U5   9
+
+.ADD_TER   R3   1     "Net-(R3-Pad1)"
+.TER       U5   11
+
+.ADD_TER   U5   12     "Net-(R4-Pad1)"
+.TER       R4   1
+
+.ADD_TER   U4   2     "in2"
+.TER       v2   1
+            U3   ~
+
+.ADD_TER   R3   2     "GND"
+.TER       R2   2
+            R1   2
+            R5   2
+            R6   2
+            R7   2
+            R8   2
+            R4   2
+            v2   2
+            v1   2
+
+.ADD_TER   U4   3     "Net-(U2-Pad1)"
+.TER       U2   1
+
+.ADD_TER   U2   2     "Net-(U2-Pad2)"
+.TER       U4   4
+
+.ADD_TER   v1   1     "in1"
+.TER       U4   1
+            U1   ~
+
+.END
