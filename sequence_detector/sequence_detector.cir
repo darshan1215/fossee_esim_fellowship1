@@ -1,0 +1,25 @@
+* /home/darshan1512/eSim-Workspace1/sequence_detector/sequence_detector.cir
+
+* EESchema Netlist Version 1.1 (Spice format) creation date: Sun May 16 17:23:30 2021
+
+* To exclude a component from the Spice Netlist add [Spice_Netlist_Enabled] user FIELD set to: N
+* To reorder the component spice node sequence add [Spice_Node_Sequence] user FIELD and define sequence: 2,1,0
+
+* Sheet Name: /
+U4  Net-_U4-Pad1_ Din Net-_U4-Pad3_ out seq1		
+U8  out Net-_R1-Pad1_ dac_bridge_1		
+v1  clk GND pulse		
+v2  i1 GND pulse		
+v3  i2 GND pulse		
+v4  rst GND pulse		
+U1  Net-_U1-Pad1_ Net-_U1-Pad2_ Din and_gate		
+U5  clk i1 i2 rst Net-_U4-Pad1_ Net-_U1-Pad1_ Net-_U1-Pad2_ Net-_U4-Pad3_ adc_bridge_4		
+R1  Net-_R1-Pad1_ GND resistor		
+U2  clk plot_v1		
+U6  Din plot_v1		
+U3  rst plot_v1		
+U7  out plot_v1		
+U10  i1 plot_v1		
+U9  i2 plot_v1		
+
+.end
